@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="utf-8" />
+  <title>Tu Voz, Tu Premio — Concursos de Canto Online</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Tu Voz, Tu Premio" />
+  <meta property="og:title" content="Tu Voz, Tu Premio — Concursos de Canto Online" />
+  <meta property="og:description" content="Apoyá a tu artista favorito con tu voto y regalos en vivo. ¡Tu voz puede ganar premios en dólares!" />
+  <meta property="og:image" content="https://latambucks-eng.github.io/tu-voz-tu-premio-web/f5383208a_logo-tu-voz-tu-premio.png" />
+  <meta name="twitter:card" content="summary_large_image" />
   <script>
+    var base = 'https://latambucks-eng.github.io/tu-voz-tu-premio-web/';
     var path = window.location.pathname || '';
     var search = window.location.search || '';
     var hash = window.location.hash || '';
     if (hash.indexOf('type=recovery') !== -1 || hash.indexOf('access_token=') !== -1) {
-      window.location.replace('https://github.io' + hash);
+      window.location.replace(base + '#/reset-password' + hash);
     } else if (path && path !== '/') {
-      window.location.replace('https://latambucks-eng.github.io/tu-voz-tu-premio-web/#' + path + search);
+      window.location.replace(base + '#' + path + search);
     } else {
-      window.location.replace('https://latambucks-eng.github.io/tu-voz-tu-premio-web/' + search + hash);
+      window.location.replace(base + search + hash);
     }
   </script>
 </head>
 <body>Redirigiendo...</body>
 </html>
+
