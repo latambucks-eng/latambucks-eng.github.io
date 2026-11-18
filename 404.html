@@ -7,9 +7,9 @@
     var search = window.location.search || '';
     var hash = window.location.hash || '';
     if (hash.indexOf('type=recovery') !== -1 || hash.indexOf('access_token=') !== -1) {
-      window.location.replace('https://latambucks-eng.github.io/tu-voz-tu-premio-web/' + hash);
+      window.location.replace('https://github.io' + hash);
     } else if (path && path !== '/') {
-      window.location.replace('https://latambucks-eng.github.io/tu-voz-tu-premio-web/' + path + search);
+      window.location.replace('https://latambucks-eng.github.io/tu-voz-tu-premio-web/#' + path + search);
     } else {
       window.location.replace('https://latambucks-eng.github.io/tu-voz-tu-premio-web/' + search + hash);
     }
